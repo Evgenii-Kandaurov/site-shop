@@ -1,0 +1,26 @@
+$bodyBgColorLight:linear-gradient(to bottom, rgb(97, 231, 7) 20%, transparent 100%);
+$bodyBgColorDark:linear-gradient(to bottom, rgb(51, 63, 44) 20%, transparent 100%);
+$sendBtnGroundLight:rgb(120, 235, 13);
+$sendBtnGroundDark:rgb(90, 161, 23);
+$textColorLight:black;
+$textColorDark: white;
+
+
+:root {
+
+@media screen and (prefers-color-scheme: light), screen and (prefers-color-scheme: no-preference) {
+
+    --bodyBackground:#{$bodyBgColorLight};
+    --sendBtnGround:#{$sendBtnGroundLight};
+    --textColor:#{$textColorLight};
+
+}
+
+
+@media screen and (prefers-color-scheme: dark) { 
+    --bodyBackground:#{$bodyBgColorDark};
+    --sendBtnGround:#{$sendBtnGroundDark};
+    --textColor:#{$textColorDark};
+}
+
+}

@@ -1,0 +1,125 @@
+
+html {
+height: 100%;
+}
+body{
+    margin: 0;
+    min-height: 100%;
+}
+
+:root {
+
+--bodyBackground:linear-gradient(to bottom, rgb(97, 231, 7) 20%, transparent 100%);
+--sendBtnGround: rgb(90, 161, 23);
+--textColor: black;
+
+
+}
+
+@import "themesBtn";
+
+
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:var(--bodyBackground);
+}
+
+h1 {
+    font-family: RobotoFlex;
+    color: var(--textColor);
+    font-weight: 900;
+}
+
+.callBtn {
+    min-width: 350px;
+    min-height: 300px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    
+    
+}
+.callBtnInput {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 35% 65%;
+    grid-template-areas: "userName name  "
+                         "userPhone phone"                       
+    ;
+    justify-content: center;
+}
+.userName{
+    grid-area:userName;
+} 
+.userPhone {
+    grid-area:userPhone;
+}
+
+#name{
+    grid-area:name;
+}
+#phone{
+    grid-area:phone;
+}
+.userName {
+    text-align: right;
+    padding-right: 10px;
+    align-self: center;
+    font-weight: 700;
+    font-family: RobotoFlex;
+    color: var(--textColor);
+    
+}
+.userPhone{
+    text-align: right;
+    padding-right: 10px;
+    align-self: center;
+    align-self: center;
+    font-weight: 700;
+    font-family: RobotoFlex;
+    color: var(--textColor);
+    
+    
+}
+
+#name {
+    width: auto;
+    height: 20px;
+    align-self: center;
+
+}
+
+#phone{
+    height: 20px;
+    align-self: center;
+}
+
+.sendBtn {
+    background-color: var(--sendBtnGround);
+    border-radius: 25px;
+    width: 160px;
+    text-align: center;
+    box-shadow: 0 0 1px rgba(0,0,0,0.5),inset 0 0 10px rgba(0,0,0,0.9);
+    color:var(--textColor);
+    
+}
+
+.sendBtn:active {
+    transform: perspective(20px) translateZ(-10px);
+    
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+    .sendBtn {
+        transition: all 0.3s ease;
+    .sendBtn:active {
+        transition: all 0.3s ease;
+    }
+    }
+
+}
