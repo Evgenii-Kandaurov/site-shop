@@ -1,0 +1,27 @@
+
+.site-contentScrollMenu{
+    padding-top: 10px;
+    height: 50px;
+    width: auto;
+    overflow-x: scroll;
+    white-space: nowrap;
+    background: linear-gradient(to bottom, green 20%, transparent 100%);
+}
+.scroll-menuInput{
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: RoboFlex;
+    font-weight: 700;
+    color: var(--headerTextColor);
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+background-color: rgb(73, 73, 71);
+border-radius: 8px;
+height: 1px;
+box-shadow:var(--boxShadowScrollMenu);
+}

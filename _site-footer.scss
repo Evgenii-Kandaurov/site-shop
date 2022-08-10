@@ -1,0 +1,34 @@
+.site-footer{
+    background-color: var( --siteFooterBgColor);
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.site-footerLink{
+    color: var(--siteFooterTextColor);
+    font-family: RobotoFlex;
+    font-weight: 300;
+}
+
+.site-footerLink:active {
+    color: var(--gridInputRed);
+}
+
+.site-footerLink:hover{
+    background-color: var(--siteNavigationYGcolor);
+    border-radius: 5px;
+    
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+    .site-footerLink{
+        transition: all .3s ease;
+    }
+    .site-footerLink:hover{
+        transition: all .3s ease;
+    }
+
+}

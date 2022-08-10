@@ -1,0 +1,64 @@
+
+ :root {
+  --headerBgColor:rgb(255, 255, 255);
+  --headerTextColor:black;
+  --headerSecondaryBgColor: rgb(255, 255, 43);
+  --siteFooterBgColor: rgb(107, 107, 107);
+  --siteHeaderBorder: gray;
+  --siteFooterTextColor: white;
+  --siteHeader-height: 120px;
+  --siteNavigationYGcolor: rgb(133, 167, 67);
+  --gridInputDarkGreen: green;
+  --gridInputRed:rgb(199, 112, 13);
+  --gridInputBoxShadow:0 0 10px rgba(0, 0, 0, 0.5),inset 0 0 5px rgba(0, 0, 0, 0.9);
+  --headerTextShadow:-1px -1px white;
+  --mainFooterInputBoxShadow:0 0 1px rgba(0,0,0,0.5),inset 0 0 40px rgba(0,0,0,0.9);
+  --boxShadowScrollMenu: 0 0 1px rgb(248, 246, 246),inset 0 0 30px rgba(255, 253, 253, 0.9);
+  --subMenuLinkBgColor:rgb(255, 208, 0);
+
+  
+  --paddingSmall: 5px;
+  --paddingMedium:15px;
+  --paddingLarge:20px;
+
+
+ }
+
+  
+   
+    
+  
+
+@font-face {
+  font-family: RobotoFlex;
+  src: url(../fonts/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf);
+}
+@font-face {
+  font-family: Kalam;
+  src: url(/fonts/Kalam-Light.ttf)
+}
+@font-face {
+  font-family: Anton;
+  src: url(../fonts/Anton/Anton-Regular.ttf)
+}
+
+@import "site-header";
+@import "site-layout";
+@import "site-content";
+@import "grid";
+@import "site-scrollMenu";
+@import "site-adv";
+@import "btn";
+@import "site-footer";
+@import "themes";
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background-color: var(--headerBgColor);
+
+}

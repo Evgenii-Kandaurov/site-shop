@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .site-header{
+    flex:0 0 120px;
+  }
+  .site-content{
+    flex: 1 1 auto;
+  }
+  .site-footer{
+    flex: 0 0 120px;
+  }
+  
+  

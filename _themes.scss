@@ -1,0 +1,55 @@
+$colorBodyBgLight: rgb(248, 248, 248);
+$colorBodyBgDark: rgb(36, 33, 33);
+$colorTextLight:black;
+$colorTextDark: white;
+$colorSecBgDark:rgb(158, 158, 10);
+$gridInputGreenDarkTheme:rgb(19, 247, 19);
+$gridInputBoxShadowDark: 0 0 10px rgba(60, 182, 44, 0.979),inset 0 0 5px rgb(84, 204, 28);
+$headerTextShadowDark: -1px -1px rgb(12, 11, 11);
+$footerBgColorLight:rgb(107, 107, 107);
+$colorSecBgLight:rgb(255, 255, 43);
+$gridInputGreenLightTheme:green;
+$grinInputBoxShadowLight:0 0 10px rgba(0, 0, 0, 0.5),inset 0 0 5px rgba(0, 0, 0, 0.9);
+$headerTextShadowLight:-1px -1px white;
+$mainFooterInputBoxShadowLight:0 0 1px rgba(0,0,0,0.5),inset 0 0 40px rgba(0,0,0,0.9);
+$mainFooterInputBoxShadowDark:0 0 1px rgba(60, 182, 44, 0.979),inset 0 0 40px rgb(84, 204, 28);
+$boxShadowScrollMenuLight: 0 0 1px rgb(248, 246, 246),inset 0 0 30px rgba(255, 253, 253, 0.9);
+$boxShadowScrollMenuDark: 0 0 1px rgb(20, 19, 19),inset 0 0 30px rgba(56, 54, 54, 0.9);
+$subMenuLinkLight:rgb(255, 208, 0);
+$submenuLinkDrak: black;
+:root {
+
+    @media screen and (prefers-color-scheme: light), screen and (prefers-color-scheme: no-preference) {
+      --headerBgColor:#{$colorBodyBgLight};
+      --siteFooterBgColor:#{$footerBgColorLight};
+      --headerTextColor:#{$colorTextLight};
+      --headerSecondaryBgColor:#{$colorSecBgLight};
+      --gridInputDarkGreen:#{$gridInputGreenLightTheme};
+      --gridInputBoxShadow:#{$grinInputBoxShadowLight};
+      --headerTextShadow:#{$headerTextShadowLight};
+      --mainFooterInputBoxShadow:#{$mainFooterInputBoxShadowLight};
+      --boxShadowScrollMenu:#{$boxShadowScrollMenuLight};
+      --subMenuLinkBgColor:#{$subMenuLinkLight};
+      }
+    
+    
+      @media screen and (prefers-color-scheme: dark) {
+      
+      
+      --headerBgColor: #{$colorBodyBgDark};
+      --siteFooterBgColor:#{$colorTextLight};
+      --headerTextColor:#{$colorTextDark};
+      --headerSecondaryBgColor:#{$colorSecBgDark};
+      --gridInputDarkGreen:#{$gridInputGreenDarkTheme};
+      --gridInputBoxShadow:#{$gridInputBoxShadowDark};
+      --headerTextShadow:#{$headerTextShadowDark};
+      --mainFooterInputBoxShadow:#{$mainFooterInputBoxShadowDark};
+      --boxShadowScrollMenu:#{$boxShadowScrollMenuDark};
+      --subMenuLinkBgColor:#{$submenuLinkDrak};
+
+      }
+
+
+
+
+}

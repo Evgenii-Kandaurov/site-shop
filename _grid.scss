@@ -1,0 +1,100 @@
+.site-contentGrid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 20px 0;
+}
+.grid-input{
+box-shadow: var(--gridInputBoxShadow);
+flex: 0 1 250px;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: var(--paddingMedium);
+
+
+}
+.gridImage{
+    height: 250px;
+    max-inline-size: 250px;
+}
+
+ a {
+    text-decoration: none;
+}
+
+.grid-input:active{
+    transform: perspective(10px) translateZ(1px);
+}
+
+.gridInput-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.grid-inputBtn{
+    display:block;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5),inset 0 0 5px rgba(0,0,0,0.9);
+    background-color: var(--headerSecondaryBgColor);
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    padding-top: var(--paddingMedium);
+    border-radius: 15px;
+    text-decoration: none;
+    color: var(--headerTextColor);
+    font-family: RobotoFlex;
+    font-weight: 900;
+    
+}
+.gridInputTextPrimary{
+    text-decoration: none;
+    color: var(--headerTextColor);
+    text-align: center;
+    font-family: RobotoFlex;
+    font-weight: 700;
+    
+}
+.gridInputTextSecondary{
+    text-decoration: none;
+    color: var(--headerTextColor);
+    text-align: center;
+    font-family: RobotoFlex;
+    font-weight: 300;
+    color: var(--gridInputDarkGreen);
+    font-family: Anton;
+}
+.gridInputTextThird{
+    color: var(--headerTextColor);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: RobotoFlex;
+    font-weight: 700;
+    color: var(--gridInputRed);
+    text-shadow: -1px -1px var(--headerTextColor);
+    font-size: 20px;
+}
+
+@media screen and (min-width: 599px) {
+    .grid-input:hover {
+    background-color: var( --siteNavigationYGcolor);
+    
+}
+
+.grid-inputBtn:hover {
+    background-color: var(--gridInputRed);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+ .grid-input {
+    transition: all .3s ease;
+ }
+ .grid-input:hover{
+    transition: all .3s ease;
+ }
+}
+
+}
